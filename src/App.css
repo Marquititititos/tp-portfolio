@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-color: #f0f0f0; /* your desired color */
+}
+
+.Nombre {            /* full viewport height */
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;
+}
