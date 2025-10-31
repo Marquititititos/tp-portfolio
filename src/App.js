@@ -7,6 +7,14 @@ import fotoOrt from './images/image 5.png';
 import fotoImage from './images/images.png';
 
 function App() {
+
+  const scrollToSection = (sectionId) => {
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <div className="App">
       <header className="Arriba">
@@ -16,9 +24,9 @@ function App() {
         </div>
         <div className='Linea1'></div>
         <div className='Atajos'>
-          <button className="botonMisProyectos" >Mis proyectos</button>
-          <button className="botonFormacion">Formación</button>
-          <button className="botonHabilidades">Habilidades</button>
+          <button className="botonMisProyectos" onClick={() => scrollToSection('misProyectos')}>Mis proyectos</button>
+          <button className="botonFormacion" onClick={() => scrollToSection('formacion')}>Formación</button>
+          <button className="botonHabilidades" onClick={() => scrollToSection('habilidades')}>Habilidades</button>
         </div>
       </header>
 
@@ -30,7 +38,7 @@ function App() {
         <img className='FotoPerfil' src={fotoperfil}></img>
       </header>
 
-      <header className="misProyectos">
+      <header className="misProyectos" id='misProyectos'>
         <span className="TituloElemento">Mis proyectos</span>
         <div className="elementoIzquierda">
           <img className="fotoIzquierda" src={fotoRelleno}></img>
@@ -49,7 +57,7 @@ function App() {
         </div>
       </header>
 
-      <header className="Formacion">
+      <header className="Formacion" id="formacion">
          <span className="TituloElemento">Formación</span>
 
          <div className="elementoIzquierda">
@@ -77,7 +85,7 @@ function App() {
         </div>
       </header>
 
-      <header className="Habilidades">
+      <header className="Habilidades" id='habilidades'>
         <span className="TituloElemento">Habilidades</span>
 
         <div className="elementoIzquierda">
@@ -107,12 +115,19 @@ function App() {
 
       <header className='Contacto'>
         <span className='minitexto'>Marcos Tannenbaum</span>
-        <div className='contactoDerecha'>
+        <div className='textoContacto'>
+        <div className='contactoIzquierda'>
           <span className='minitexto'>LinkedIn</span>
           <span className='minitexto'>YouTube</span>
           <span className='minitexto'>Instagram</span>
           <span className='minitexto'>TikTok</span>
-          <span className='minitexto'>X / Twitter</span>
+          <span className='minitexto'>X/Twitter</span>
+        </div>
+        <div className='contactoDerecha'>
+          <span className='minitexto'>Contacto:</span>
+          <span className='minitexto'>+54 911 6685-0342</span>
+          <span className='minitexto'>marcostannenbaum@gmail.com</span>
+        </div>
         </div>
       </header>
     </div>
