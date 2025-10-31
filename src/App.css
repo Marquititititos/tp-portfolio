@@ -92,13 +92,23 @@ html, body, #root, .App {
   gap: 5%;
 }
 
-.textoMisProyectos {
+.Formacion {
+  height: 20%;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+.TituloElemento {
   margin-top: 5%;
   font-size: xx-large;
   font-weight: bolder;
 }
 
-.apocaliptic {
+.elementoIzquierda {
   width: 100%;
   height: 30%;
   display: flex;
@@ -113,25 +123,25 @@ html, body, #root, .App {
   font-weight: bolder;
 }
 
-.fotoApocaliptic {
+.fotoIzquierda {
   margin-left: 10%;
   width: 30%;
   height: auto;
 }
 
-.textoApocaliptic {
+.textoIzquierda {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
 }
 
-.descApocaliptic {
+.descIzquierda {
   margin-top: 5%;
   text-align: start;
 }
 
-.getOffMyTrain {
+.elementoDerecha {
   width: 100%;
   height: 30%;
   display: flex;
@@ -141,13 +151,13 @@ html, body, #root, .App {
   gap: 10%;
 }
 
-.fotoGetOffMyTrain {
+.fotoDerecha {
   margin-right: 10%;
   width: 30%;
   height: auto;
 }
 
-.textoGetOffMyTrain {
+.textoDerecha {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -155,14 +165,14 @@ html, body, #root, .App {
   text-align: end;
 }
 
-.tituloGetOffMyTrain {
+.tituloDerecha {
   margin-top: 5%;
   font-size: x-large;
   font-weight: bolder;
   margin-left: 70%;
 }
 
-.descGetOffMyTrain {
+.descDerecha {
   margin-top: 5%;
   text-align: end;
 }
