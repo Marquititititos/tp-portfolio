@@ -4,6 +4,7 @@ import fotoperfil from './images/image 1.png';
 import fotoRelleno from './images/image 2.png';
 import fotoDitella from './images/image 4.png';
 import fotoOrt from './images/image 5.png';
+import fotoImage from './images/images.png';
 
 function App() {
   return (
@@ -65,6 +66,53 @@ function App() {
               <span className="descDerecha">Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcosTexto que va a hacer MArcosTexto que va a hacer MArcos</span>
           </div>
           <img className="fotoDerecha" src={fotoOrt}></img>
+        </div>
+
+        <div className="elementoIzquierda">
+          <img className="fotoIzquierda" src={fotoImage}></img>
+          <div className="textoIzquierda">
+              <span className="subtitulo">Tecniciatura en programación avanzada de videojuegos</span>
+              <span className="descIzquierda">Estoy estudiando en UTDT hace 2 años y me estoy formando en diversas tecnologías como C, C++, C#,  Python, JS, HTML, CSS. Además la formación se complementa con una persspectiva de emprendedurismo para prepararse en la cultura laboral empresarial.</span>
+          </div>
+        </div>
+      </header>
+
+      <header className="Habilidades">
+        <span className="TituloElemento">Habilidades</span>
+
+        <div className="elementoIzquierda">
+          <img className="fotoIzquierda" src={fotoRelleno}></img>
+          <div className="textoIzquierda">
+              <span className="subtitulo">Habilidad</span>
+              <span className="descIzquierda">Estoy estudiando en UTDT hace 2 años y me estoy formando en diversas tecnologías como C, C++, C#,  Python, JS, HTML, CSS. Además la formación se complementa con una persspectiva de emprendedurismo para prepararse en la cultura laboral empresarial.</span>
+          </div>
+        </div>
+
+        <div className="elementoIzquierda">
+          <img className="fotoIzquierda" src={fotoRelleno}></img>
+          <div className="textoIzquierda">
+              <span className="subtitulo">Habilidad</span>
+              <span className="descIzquierda">Estoy estudiando en UTDT hace 2 años y me estoy formando en diversas tecnologías como C, C++, C#,  Python, JS, HTML, CSS. Además la formación se complementa con una persspectiva de emprendedurismo para prepararse en la cultura laboral empresarial.</span>
+          </div>
+        </div>
+
+        <div className="elementoIzquierda">
+          <img className="fotoIzquierda" src={fotoRelleno}></img>
+          <div className="textoIzquierda">
+              <span className="subtitulo">Habilidad</span>
+              <span className="descIzquierda">Estoy estudiando en UTDT hace 2 años y me estoy formando en diversas tecnologías como C, C++, C#,  Python, JS, HTML, CSS. Además la formación se complementa con una persspectiva de emprendedurismo para prepararse en la cultura laboral empresarial.</span>
+          </div>
+        </div>
+      </header>
+
+      <header className='Contacto'>
+        <span className='minitexto'>Marcos Tannenbaum</span>
+        <div className='contactoDerecha'>
+          <span className='minitexto'>LinkedIn</span>
+          <span className='minitexto'>YouTube</span>
+          <span className='minitexto'>Instagram</span>
+          <span className='minitexto'>TikTok</span>
+          <span className='minitexto'>X / Twitter</span>
         </div>
       </header>
     </div>
