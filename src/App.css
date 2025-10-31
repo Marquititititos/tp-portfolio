@@ -54,7 +54,7 @@ html, body, #root, .App {
   display: flex;
   align-items: center;
   justify-content: start;
-  background-color: aqua;
+  background-color: white;
   width: 100%;
   height: 7%;
 }
@@ -75,4 +75,94 @@ html, body, #root, .App {
 .Titulo {
   font-size: xx-large;
   font-weight: bolder;
+}
+
+.FotoPerfil {
+  width: 20%;
+  height: auto;
+}
+
+.misProyectos {
+  height: 20%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+}
+
+.textoMisProyectos {
+  margin-top: 5%;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.apocaliptic {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: grey;
+  gap: 10%;
+}
+.subtitulo {
+  margin-top: 5%;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.fotoApocaliptic {
+  margin-left: 10%;
+  width: 30%;
+  height: auto;
+}
+
+.textoApocaliptic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.descApocaliptic {
+  margin-top: 5%;
+  text-align: start;
+}
+
+.getOffMyTrain {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: grey;
+  gap: 10%;
+}
+
+.fotoGetOffMyTrain {
+  margin-right: 10%;
+  width: 30%;
+  height: auto;
+}
+
+.textoGetOffMyTrain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: end;
+}
+
+.tituloGetOffMyTrain {
+  margin-top: 5%;
+  font-size: x-large;
+  font-weight: bolder;
+  margin-left: 70%;
+}
+
+.descGetOffMyTrain {
+  margin-top: 5%;
+  text-align: end;
 }
