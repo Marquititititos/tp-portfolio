@@ -150,6 +150,7 @@ html, body, #root, .App {
   align-items: center;
   justify-content: flex-start;
   gap: 6%;
+  padding-top: 5%;
 }
 
 .fotoIzquierda {
@@ -178,5 +179,79 @@ html, body, #root, .App {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 10%;
+}
+
+.Habilidades {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   gap: 5%;
+}
+
+.GridHabilidades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3%;
+  width: 80%;
+  padding-top: 3%;
+  justify-items: center;
+}
+
+.habilidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.habilidadFoto {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.habilidadTexto {
+  text-align: center;
+}
+
+.Contacto {
+  font-weight: bold;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+  height: 200px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 5%;
+  gap: 5%;
+}
+
+.minitexto {
+  font-size: large;
+  color: white;
+}
+
+.contactoIzquierda {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.contactoDerecha {
+  display: flex;
+  flex-direction: column;
+  text-align: flex-end;
+  align-items: end;
+  justify-content: start;
+}
+
+.textoContacto {
+  display: flex;
+  gap: 310%;
+  font-weight: bold;
 }

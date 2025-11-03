@@ -15,6 +15,15 @@ function App() {
     }
   };
 
+  const habilidades = [
+    { id: 1, name: "Habilidad 1", image: fotoRelleno, texto: "Descripción de la habilidad iría acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+    { id: 2, name: "Habilidad 2", image: fotoRelleno, texto: "Descripción de la habilidad iría acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+    { id: 3, name: "Habilidad 3", image: fotoRelleno, texto: "Descripción de la habilidad iría acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+    { id: 4, name: "Habilidad 4", image: fotoRelleno, texto: "Descripción de la habilidad iría acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+    { id: 5, name: "Habilidad 5", image: fotoRelleno, texto: "Descripción de la habilidad iría acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+    { id: 6, name: "Habilidad 6", image: fotoRelleno, texto: "Descripción de la habilidad iría acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" },
+  ];
+
   return (
     <div className="App">
       <header className="Arriba">
@@ -85,8 +94,38 @@ Este es un texto provisorio para usarse en el wireframe, pero en el trabajo fina
               <span className="descIzquierda">Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcosTexto que va a hacer MArcosTexto que va a hacer MArcos</span>
           </div>
         </div>
-
       </header>
+
+      <header className="Habilidades" id='habilidades'>
+        <span className="TituloElemento">Habilidades</span>
+
+        <div className="GridHabilidades">
+        {habilidades.map((h) => (
+        <div className="habilidad" key={h.id}>
+          <img src={h.image} className="habilidadFoto" />
+          <span className="habilidadTexto">{h.texto}</span>
+        </div>
+         ))}
+        </div>
+      </header>
+
+      <header className='Contacto'>
+        <span className='minitexto'>Félix Rozitchner</span>
+        <div className='textoContacto'>
+        <div className='contactoIzquierda'>
+          <span className='minitexto'>LinkedIn</span>
+          <span className='minitexto'>YouTube</span>
+          <span className='minitexto'>Instagram</span>
+          <span className='minitexto'>X/Twitter</span>
+        </div>
+        <div className='contactoDerecha'>
+          <span className='minitexto'>Contacto:</span>
+          <span className='minitexto'>+54 911 6948-0665</span>
+          <span className='minitexto'>felixrozitchner@gmail.com</span>
+        </div>
+        </div>
+      </header>
+
     </div> 
   );
 }
