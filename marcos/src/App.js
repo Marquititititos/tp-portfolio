@@ -44,14 +44,14 @@ function App() {
           <img className="fotoIzquierda" src={fotoRelleno}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">ApocalipTIC</span>
-              <span className="descIzquierda">Juego tower defense con kiajgoú wenrgjkn ber kweel bgflekwrbgi ewurbgke wwrjhbgk jebrgkjebgvkjljerbg kjhheww rfbgkljehrbg kherbge erlkeghrg lkerughek jlrhg luh bbgvkjw bgvkjbwrgkljw rbgkjwr  wñjjb rg.kjwbeeglkjwbgk ljwbgkjwbgkj webgkjbwkjbgj.</span>
+              <span className="descIzquierda">Juego tower defence tematizado en una escuela, en el que hay que sobrevivir por 30 rondas usando distintas torretas. Hice este juego en 1 año con un equipo de otro programador y 2 diseñadores. Programé las torretas y el sistema de construcción y mejora de las mismas.</span>
           </div>
         </div>
 
         <div className="elementoDerecha">
           <div className="textoDerecha">
               <span className="tituloDerecha">Get Off My Train</span>
-              <span className="descDerecha">Juego tower defense con kiajgoú wenrgjkn ber kweel bgflekwrbgi ewurbgke wwrjhbgk jebrgkjebgvkjljerbg kjhheww rfbgkljehrbg kherbge erlkeghrg lkerughek jlrhg luh bbgvkjw bgvkjbwrgkljw rbgkjwr  wñjjb rg.kjwbeeglkjwbgk ljwbgkjwbgkj webgkjbwkjbgj.</span>
+              <span className="descDerecha">Juego estilo roguelike en el que controlas a un maquinistaa de tren que tiene que despejar infinitos vagones llenos de enemigos con armas y habilidades aleatorias. Hice este juego en un plazo de 4 meses totalmente por mi cuenta, haciendo diseño, música y programación.</span>
           </div>
           <img className="fotoDerecha" src={fotoRelleno}></img>
         </div>
@@ -71,7 +71,7 @@ function App() {
         <div className="elementoDerecha">
           <div className="textoDerecha">
               <span className="tituloDerecha">Secundaria en Orientación TICs</span>
-              <span className="descDerecha">Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcosTexto que va a hacer MArcosTexto que va a hacer MArcos</span>
+              <span className="descDerecha">Completé el colegio secundario en ORT con un promedio de 9.20, estudiando los últimos 3 años en una orientación en TICs. En al misma aprendí conocimientos básicos de programación, diseño y Unity, además de cómo gestionar proyectos en equipo.</span>
           </div>
           <img className="fotoDerecha" src={fotoOrt}></img>
         </div>
@@ -80,7 +80,7 @@ function App() {
           <img className="fotoIzquierda" src={fotoImage}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Tecniciatura en programación avanzada de videojuegos</span>
-              <span className="descIzquierda">Estoy estudiando en UTDT hace 2 años y me estoy formando en diversas tecnologías como C, C++, C#,  Python, JS, HTML, CSS. Además la formación se complementa con una persspectiva de emprendedurismo para prepararse en la cultura laboral empresarial.</span>
+              <span className="descIzquierda">Hice un curso de 4 años complementario en Image Campus, en el que aprendí aspectos más específicos del desarrollo de videojuegos, la gestión y funcionamiento de equipos de desarrollo, la colaboración entre diseñadores, escritores y programadores, y cómo avanzar en la industria desde cero.</span>
           </div>
         </div>
       </header>
@@ -91,24 +91,24 @@ function App() {
         <div className="elementoIzquierda">
           <img className="fotoIzquierda" src={fotoRelleno}></img>
           <div className="textoIzquierda">
-              <span className="subtitulo">Habilidad</span>
-              <span className="descIzquierda">Estoy estudiando en UTDT hace 2 años y me estoy formando en diversas tecnologías como C, C++, C#,  Python, JS, HTML, CSS. Además la formación se complementa con una persspectiva de emprendedurismo para prepararse en la cultura laboral empresarial.</span>
+              <span className="subtitulo">Programación orientada a objetos</span>
+              <span className="descIzquierda">Sé manejar clases y métodos en distintos lenguajes, principalmente C# adaptado a Unity. También tengo conocimientos en Python, C++, JS, HTML y CSS. Aprendí a desarrollarme en tareas de Frontend y Backend, tanto mediante educación formal como con aprendizaje autodidacta.</span>
           </div>
         </div>
 
         <div className="elementoIzquierda">
           <img className="fotoIzquierda" src={fotoRelleno}></img>
           <div className="textoIzquierda">
-              <span className="subtitulo">Habilidad</span>
-              <span className="descIzquierda">Estoy estudiando en UTDT hace 2 años y me estoy formando en diversas tecnologías como C, C++, C#,  Python, JS, HTML, CSS. Además la formación se complementa con una persspectiva de emprendedurismo para prepararse en la cultura laboral empresarial.</span>
+              <span className="subtitulo">Ilustración en pixel art</span>
+              <span className="descIzquierda">Aprendí por mi cuenta a diseñar en estilo 2D pixel art, diseño que usé para crear mis juegos. Amplié mis conocimientos en Image Campus, pero principalmente aprendí gracias a práctica y asistencia en foros públicos, especializándome en la herramienta Asesprite.</span>
           </div>
         </div>
 
         <div className="elementoIzquierda">
           <img className="fotoIzquierda" src={fotoRelleno}></img>
           <div className="textoIzquierda">
-              <span className="subtitulo">Habilidad</span>
-              <span className="descIzquierda">Estoy estudiando en UTDT hace 2 años y me estoy formando en diversas tecnologías como C, C++, C#,  Python, JS, HTML, CSS. Además la formación se complementa con una persspectiva de emprendedurismo para prepararse en la cultura laboral empresarial.</span>
+              <span className="subtitulo">Producción musical</span>
+              <span className="descIzquierda">Tomé cursos de producción en Arjaus para entender como funcionan los principales DAWs, como Ableton Live y FL Studio 22. Suelo producir la música para mis juegos, incluyendo los proyectos ya mencionados ApocalipTIC y Get Off My Train.</span>
           </div>
         </div>
       </header>
