@@ -88,12 +88,15 @@ html, body, #root, .App {
 }
 
 .misProyectos {
+  position: relative;
   height: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: 5%;
+  z-index: 1;
+  margin-top: 10%;
 }
 
 .Formacion {
@@ -103,6 +106,7 @@ html, body, #root, .App {
   align-items: center;
   justify-content: flex-start;
   gap: 5%;
+  margin-top: 20%;
 }
 
 .Habilidades {
@@ -228,4 +232,14 @@ html, body, #root, .App {
   justify-content: start;
   gap: 150%;
   font-weight: bold;
+}
+
+.Ellipse1{
+  position: absolute;
+  top: -90px;
+  left: -100px;
+  width: 110%;  
+  height: auto;
+  object-fit: cover; 
+  z-index: -10;
 }

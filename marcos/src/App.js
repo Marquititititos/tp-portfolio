@@ -5,6 +5,9 @@ import fotoRelleno from './images/image 2.png';
 import fotoDitella from './images/image 4.png';
 import fotoOrt from './images/image 5.png';
 import fotoImage from './images/images.png';
+import Ellipse1 from './images/Ellipse 1 (1).png'
+import fotoApocaliptic from './images/image 17.png';
+import fotoGetOffMyTrain from './images/image 24.png';
 
 function App() {
 
@@ -39,9 +42,10 @@ function App() {
       </header>
 
       <header className="misProyectos" id='misProyectos'>
+      <img src={Ellipse1} className="Ellipse1"/>
         <span className="TituloElemento">Mis proyectos</span>
         <div className="elementoIzquierda">
-          <img className="fotoIzquierda" src={fotoRelleno}></img>
+          <img className="fotoIzquierda" src={fotoApocaliptic}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">ApocalipTIC</span>
               <span className="descIzquierda">Juego tower defence tematizado en una escuela, en el que hay que sobrevivir por 30 rondas usando distintas torretas. Hice este juego en 1 año con un equipo de otro programador y 2 diseñadores. Programé las torretas y el sistema de construcción y mejora de las mismas.</span>
@@ -53,7 +57,7 @@ function App() {
               <span className="tituloDerecha">Get Off My Train</span>
               <span className="descDerecha">Juego estilo roguelike en el que controlas a un maquinistaa de tren que tiene que despejar infinitos vagones llenos de enemigos con armas y habilidades aleatorias. Hice este juego en un plazo de 4 meses totalmente por mi cuenta, haciendo diseño, música y programación.</span>
           </div>
-          <img className="fotoDerecha" src={fotoRelleno}></img>
+          <img className="fotoDerecha" src={fotoGetOffMyTrain}></img>
         </div>
       </header>
 
