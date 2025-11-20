@@ -4,7 +4,7 @@ import fotoperfil from './images/image 1.png';
 import fotoRelleno from './images/image 2.png';
 import fotoDitella from './images/image 4.png';
 import fotoOrt from './images/image 5.png';
-import fotoImage from './images/images.png';
+import Ellipse1 from './images/Ellipse 4.png';
 
 function App() {
 
@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={Ellipse1} className="Ellipse Ellipse1"/>
       <header className="Arriba">
         <div className="Nombre">
           <span>Félix</span>
@@ -33,8 +34,8 @@ function App() {
         </div>
         <div className='Linea1'></div>
         <div className='Atajos'>
+        <button className="botonFormacion" onClick={() => scrollToSection('formacion')}>Formación</button>
           <button className="botonMisProyectos" onClick={() => scrollToSection('misProyectos')}>Mis proyectos</button>
-          <button className="botonFormacion" onClick={() => scrollToSection('formacion')}>Formación</button>
           <button className="botonHabilidades" onClick={() => scrollToSection('habilidades')}>Habilidades</button>
         </div>
       </header>
@@ -42,10 +43,32 @@ function App() {
       <header className='Perfil'>
         <img className='FotoPerfil' src={fotoperfil}></img>
         <div className='TextoPerfil'>
-            <span className='Titulo'>Félix Rozitchner: consultor económico</span>
+            <span className='Titulo'>Félix Rozitchner</span>
             <span className='Descripcion'>Estudiante de economía con amplios conocimientos  en programación, gestión de equipos y análisis político y económico.</span>
         </div>
       </header>
+
+      <header className="Formacion" id="formacion">
+         <span className="TituloElemento">Formación</span>
+
+         <div className="elementoIzquierda">
+          <img className="fotoIzquierda" src={fotoDitella}></img>
+          <div className="textoIzquierda">
+              <span className="subtitulo">Licenciatura en economía</span>
+              <span className="descIzquierda">Este es un texto provisorio para usarse en el wireframe, pero en el trabajo final sería reemplazado por información.
+Este es un texto provisorio para usarse en el wireframe, pero en el trabajo final sería reemplazado por información.</span>
+          </div>
+        </div>
+
+        <div className="elementoIzquierda">
+          <img className="fotoIzquierda" src={fotoOrt}></img>
+          <div className="textoIzquierda">
+              <span className="subtitulo">Secundaria en Orientación TICs</span>
+              <span className="descIzquierda">Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcosTexto que va a hacer MArcosTexto que va a hacer MArcos</span>
+          </div>
+        </div>
+      </header>
+
 
       <header className="misProyectos" id='misProyectos'>
         <span className="TituloElemento">Mis proyectos</span>
@@ -72,27 +95,6 @@ function App() {
               <span className="descDerecha">Aplicación para digitalización de comercios e interacción entre usuarios y compradores efectivamente. Además de diseñar la interfaz de la misma, colaboré en la gestión del equipo y en tareas de programación frontend.</span>
           </div>
           <img className="fotoDerecha" src={fotoRelleno}></img>
-        </div>
-      </header>
-
-      <header className="Formacion" id="formacion">
-         <span className="TituloElemento">Formación</span>
-
-         <div className="elementoIzquierda">
-          <img className="fotoIzquierda" src={fotoDitella}></img>
-          <div className="textoIzquierda">
-              <span className="subtitulo">Licenciatura en economía</span>
-              <span className="descIzquierda">Este es un texto provisorio para usarse en el wireframe, pero en el trabajo final sería reemplazado por información.
-Este es un texto provisorio para usarse en el wireframe, pero en el trabajo final sería reemplazado por información.</span>
-          </div>
-        </div>
-
-        <div className="elementoIzquierda">
-          <img className="fotoIzquierda" src={fotoOrt}></img>
-          <div className="textoIzquierda">
-              <span className="subtitulo">Secundaria en Orientación TICs</span>
-              <span className="descIzquierda">Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcos Texto que va a hacer MArcosTexto que va a hacer MArcosTexto que va a hacer MArcos</span>
-          </div>
         </div>
       </header>
 
