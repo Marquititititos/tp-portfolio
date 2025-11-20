@@ -2,12 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 import fotoperfil from './images/image 1.png';
 import fotoRelleno from './images/image 2.png';
-import fotoDitella from './images/image 4.png';
+import fotoDitella from './images/image 25.png';
 import fotoOrt from './images/image 5.png';
-import fotoImage from './images/images.png';
+import fotoImage from './images/image 6.png';
 import Ellipse1 from './images/Ellipse 1 (1).png'
 import fotoApocaliptic from './images/image 17.png';
 import fotoGetOffMyTrain from './images/image 24.png';
+import Ellipse2 from './images/Group 10.png';
+import fotoUnity from './images/image 30.png';
+import fotoAsesprite from './images/image 29.png';
+import fotoFLStudio from './images/image 28.png';
 
 function App() {
 
@@ -90,10 +94,11 @@ function App() {
       </header>
 
       <header className="Habilidades" id='habilidades'>
+        <img src={Ellipse2} className="Ellipse2"/>
         <span className="TituloElemento">Habilidades</span>
 
         <div className="elementoIzquierda">
-          <img className="fotoIzquierda" src={fotoRelleno}></img>
+          <img className="fotoIzquierda" src={fotoUnity}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Programación orientada a objetos</span>
               <span className="descIzquierda">Sé manejar clases y métodos en distintos lenguajes, principalmente C# adaptado a Unity. También tengo conocimientos en Python, C++, JS, HTML y CSS. Aprendí a desarrollarme en tareas de Frontend y Backend, tanto mediante educación formal como con aprendizaje autodidacta.</span>
@@ -101,7 +106,7 @@ function App() {
         </div>
 
         <div className="elementoIzquierda">
-          <img className="fotoIzquierda" src={fotoRelleno}></img>
+          <img className="fotoIzquierda" src={fotoAsesprite}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Ilustración en pixel art</span>
               <span className="descIzquierda">Aprendí por mi cuenta a diseñar en estilo 2D pixel art, diseño que usé para crear mis juegos. Amplié mis conocimientos en Image Campus, pero principalmente aprendí gracias a práctica y asistencia en foros públicos, especializándome en la herramienta Asesprite.</span>
@@ -109,7 +114,7 @@ function App() {
         </div>
 
         <div className="elementoIzquierda">
-          <img className="fotoIzquierda" src={fotoRelleno}></img>
+          <img className="fotoIzquierda" src={fotoFLStudio}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Producción musical</span>
               <span className="descIzquierda">Tomé cursos de producción en Arjaus para entender como funcionan los principales DAWs, como Ableton Live y FL Studio 22. Suelo producir la música para mis juegos, incluyendo los proyectos ya mencionados ApocalipTIC y Get Off My Train.</span>
