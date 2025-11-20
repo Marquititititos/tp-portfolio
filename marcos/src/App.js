@@ -13,6 +13,9 @@ import fotoUnity from './images/image 30.png';
 import fotoAsesprite from './images/image 29.png';
 import fotoFLStudio from './images/image 28.png';
 
+import { useEffect } from "react";
+
+
 function App() {
 
   const scrollToSection = (sectionId) => {
@@ -21,6 +24,48 @@ function App() {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    const elements = document.querySelectorAll(".reveal");
+  
+    function updateElements() {
+      const windowHeight = window.innerHeight;
+      const scrollY = window.scrollY;
+    
+      // --- PARALLAX FOR ELLIPSES ---
+      document.querySelectorAll(".Ellipse").forEach((el) => {
+        const speed = 0.05;          // Try 0.1 to 0.5 for different depths
+        el.style.transform = `translateY(${scrollY * speed}px)`;
+      });
+    
+      // --- REVEAL SCROLL PROGRESS EFFECT ---
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const elementTop = rect.top;
+    
+        const start = windowHeight * 0.9;
+        const end = windowHeight * 0.2;
+    
+        let progress = (start - elementTop) / (start - end);
+        progress = Math.min(Math.max(progress, 0), 1);
+    
+        const translate = 100 * (1 - progress);
+    
+        el.style.opacity = progress;
+        el.style.transform = `translateY(${translate}px)`;
+      });
+    }
+  
+    window.addEventListener("scroll", updateElements);
+    window.addEventListener("resize", updateElements);
+    updateElements(); // run on load
+  
+    return () => {
+      window.removeEventListener("scroll", updateElements);
+      window.removeEventListener("resize", updateElements);
+    };
+  }, []);
+  
   
   return (
     <div className="App">
@@ -46,9 +91,9 @@ function App() {
       </header>
 
       <header className="misProyectos" id='misProyectos'>
-      <img src={Ellipse1} className="Ellipse1"/>
+      <img src={Ellipse1} className="Ellipse Ellipse1"/>
         <span className="TituloElemento">Mis proyectos</span>
-        <div className="elementoIzquierda">
+        <div className="elementoIzquierda reveal">
           <img className="fotoIzquierda" src={fotoApocaliptic}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">ApocalipTIC</span>
@@ -56,7 +101,7 @@ function App() {
           </div>
         </div>
 
-        <div className="elementoDerecha">
+        <div className="elementoDerecha reveal">
           <div className="textoDerecha">
               <span className="tituloDerecha">Get Off My Train</span>
               <span className="descDerecha">Juego estilo roguelike en el que controlas a un maquinistaa de tren que tiene que despejar infinitos vagones llenos de enemigos con armas y habilidades aleatorias. Hice este juego en un plazo de 4 meses totalmente por mi cuenta, haciendo diseño, música y programación.</span>
@@ -68,7 +113,7 @@ function App() {
       <header className="Formacion" id="formacion">
          <span className="TituloElemento">Formación</span>
 
-         <div className="elementoIzquierda">
+         <div className="elementoIzquierda reveal">
           <img className="fotoIzquierda" src={fotoDitella}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Licenciatura en Tecnología Digital</span>
@@ -76,7 +121,7 @@ function App() {
           </div>
         </div>
 
-        <div className="elementoDerecha">
+        <div className="elementoDerecha reveal">
           <div className="textoDerecha">
               <span className="tituloDerecha">Secundaria en Orientación TICs</span>
               <span className="descDerecha">Completé el colegio secundario en ORT con un promedio de 9.20, estudiando los últimos 3 años en una orientación en TICs. En al misma aprendí conocimientos básicos de programación, diseño y Unity, además de cómo gestionar proyectos en equipo.</span>
@@ -84,7 +129,7 @@ function App() {
           <img className="fotoDerecha" src={fotoOrt}></img>
         </div>
 
-        <div className="elementoIzquierda">
+        <div className="elementoIzquierda reveal">
           <img className="fotoIzquierda" src={fotoImage}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Tecniciatura en programación avanzada de videojuegos</span>
@@ -94,10 +139,10 @@ function App() {
       </header>
 
       <header className="Habilidades" id='habilidades'>
-        <img src={Ellipse2} className="Ellipse2"/>
+        <img src={Ellipse2} className="Ellipse Ellipse2"/>
         <span className="TituloElemento">Habilidades</span>
 
-        <div className="elementoIzquierda">
+        <div className="elementoIzquierda reveal">
           <img className="fotoIzquierda" src={fotoUnity}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Programación orientada a objetos</span>
@@ -105,7 +150,7 @@ function App() {
           </div>
         </div>
 
-        <div className="elementoIzquierda">
+        <div className="elementoIzquierda reveal">
           <img className="fotoIzquierda" src={fotoAsesprite}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Ilustración en pixel art</span>
@@ -113,7 +158,7 @@ function App() {
           </div>
         </div>
 
-        <div className="elementoIzquierda">
+        <div className="elementoIzquierda reveal">
           <img className="fotoIzquierda" src={fotoFLStudio}></img>
           <div className="textoIzquierda">
               <span className="subtitulo">Producción musical</span>

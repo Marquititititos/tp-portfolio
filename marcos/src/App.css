@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .App {
   text-align: center;
 }
@@ -8,6 +10,7 @@ html, body, #root, .App {
   background: linear-gradient(to left, #B400C4, #57005E);
   color: white;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 .Arriba {
@@ -89,7 +92,7 @@ html, body, #root, .App {
 
 .misProyectos {
   position: relative;
-  height: 20%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,7 +103,7 @@ html, body, #root, .App {
 }
 
 .Formacion {
-  height: 25%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +115,7 @@ html, body, #root, .App {
 .Habilidades {
   margin-top: 10%;
   position: relative;
-  height: 20%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,10 +252,21 @@ html, body, #root, .App {
 
 .Ellipse2{
   position: absolute;
-  top: -100px;
+  top: -200px;
   left: -100px;
   width: 110%;  
   height: auto;
   object-fit: cover; 
   z-index: -10;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+  will-change: transform, opacity;
+}
+
+.Ellipse {
+  will-change: transform;
+  transition: transform 0.05s linear;
 }
