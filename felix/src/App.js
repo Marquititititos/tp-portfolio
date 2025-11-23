@@ -15,6 +15,8 @@ import analisis from './images/image 22.png';
 import informes from './images/image 23.png';
 import politica from './images/image 15.png';
 
+import { useEffect } from 'react';
+
 function App() {
 
   const scrollToSection = (sectionId) => {
@@ -23,6 +25,27 @@ function App() {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+  const elements = document.querySelectorAll(".scroll-animate");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        // progress = how visible the element is (0 to 1)
+        const progress = entry.intersectionRatio;
+        entry.target.style.setProperty("--progress", progress);
+      });
+    },
+    {
+      threshold: Array.from({ length: 101 }, (_, i) => i / 100), // makes animation smooth
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
 
   const habilidades = [
     { id: 1, name: "Python", image: python, texto: "Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código." },
@@ -60,7 +83,7 @@ function App() {
       <header className="Formacion" id="formacion">
         <span className="TituloElemento">Formación</span>
 
-        <div className="elementoIzquierda">
+        <div className="elementoIzquierda scroll-animate myElement">
           <img className="fotoIzquierda" src={fotoDitella}></img>
           <div className="textoIzquierda">
             <span className="subtitulo">Licenciatura en economía</span>
@@ -69,14 +92,14 @@ function App() {
           </div>
         </div>
         
-        <div className="elementoIzquierda">
+        <div className="elementoIzquierda scroll-animate myElement">
           <img className="fotoIzquierda" src={fotoOrt}></img>
           <div className="textoIzquierda">
             <span className="subtitulo">Secundaria en Orientación TICs</span>
-            <img src={Ellipse2} className="Ellipse Ellipse2" />
             <span className="descIzquierda">Hice 3 años de educación especializada en ORT sede belgrano, en donde aprendí conocimientos básicos de programación, diseño digital y gestión de proyectos en equipo. Participé en distintas exposiciones donde exhibí distintas aplicaciones realizadas en plazos de 5 a 8 meses.</span>
           </div>
         </div>
+        <img src={Ellipse2} className="Ellipse Ellipse2" />
       </header>
 
       <header className="misProyectos" id='misProyectos'>
@@ -84,7 +107,7 @@ function App() {
 
         <div className="proyectos">
           <div className="Tarjeta">
-            <div className="CuadroTarjeta">
+            <div className="CuadroTarjeta scroll-animate myElement">
               <img className="fotoTarjeta" src={fotoWePlay}></img>
               <span className="tituloTarjeta">We-Play</span>
               <span className="textoTarjeta">Una aplicación de escritorio en la que se pueden crear y compartir distintos juegos entre usuarios. Permite crear y jugar adivinanzas de palabras, crucigramas y cuestionarios. Yo me encargué del diseño de pantallas y estructura.</span>
@@ -92,7 +115,7 @@ function App() {
           </div>
 
           <div className="Tarjeta">
-            <div className="CuadroTarjeta">
+            <div className="CuadroTarjeta scroll-animate myElement">
               <img className="fotoTarjeta" src={fotoStatill}></img>
               <span className="tituloTarjeta">Statill</span>
               <span className="textoTarjeta">Aplicación para digitalización de comercios e interacción entre usuarios y compradores efectivamente. Además de diseñar la interfaz de la misma, colaboré en la gestión del equipo y en tareas de programación frontend.</span>
@@ -100,7 +123,7 @@ function App() {
           </div>
 
           <div className="Tarjeta">
-            <div className="CuadroTarjeta">
+            <div className="CuadroTarjeta scroll-animate myElement">
               <img className="fotoTarjeta" src={fotoApocalipTIC}></img>
               <span className="tituloTarjeta">ApocalipTIC</span>
               <span className="textoTarjeta">Juego tower defence tematizado en una escuela en el que hay que sobrevivir por 30 rondas usando distintas torretas. Hice este juego en medio año con un equipo de otro diseñador y 2 programadores. Diseñé las interfaces y los personajes.</span>
@@ -115,7 +138,7 @@ function App() {
 
         <div className="GridHabilidades">
           {habilidades.map((h) => (
-            <div className="habilidad" key={h.id}>
+            <div className="habilidad scroll-animate myElement" key={h.id}>
               <div className="habilidadFotoWrapper">
                 <img src={h.image} className="habilidadFoto" />
               </div>

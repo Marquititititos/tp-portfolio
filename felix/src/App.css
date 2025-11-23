@@ -354,9 +354,23 @@ html, body, #root, .App {
 
 .Ellipse2{
   position: absolute;
-  margin-left: -80%;
+  margin-left: -110%;
   width: 90%;  
   height: auto;
   object-fit: cover; 
   z-index: -1;
+}
+
+.scroll-animate {
+  opacity: calc(var(--progress) * 1);
+  transform: translateY(calc(30px - 30px * var(--progress)));
+  transition: opacity 0.1s linear, transform 0.1s linear;
+}
+
+.myElement {
+  transition: transform 0.3s ease; /* smooth animation */
+}
+
+.myElement:hover {
+  transform: scale(1.1);  /* 1.1 = 10% bigger */
 }
