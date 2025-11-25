@@ -11,9 +11,9 @@ import fotoStatill from './images/image 18.png';
 import python from './images/image 19.png';
 import c from './images/image 20.png';
 import figma from './images/image 21.png';
-import analisis from './images/image 22.png';
+import analisis from './images/7154582.png';
 import informes from './images/image 23.png';
-import politica from './images/image 15.png';
+import politica from './images/personas.png';
 
 import { useEffect } from 'react';
 
@@ -159,7 +159,7 @@ function App() {
           <div className='contactoDerecha'>
             <span className='minitexto'>Contacto:</span>
             <span className='minitexto'>+54 911 6948-0665</span>
-            <span className='minitexto'>felixrozitchner@gmail.com</span>
+            <span className='minitexto'>frozitchner@gmail.com</span>
           </div>
         </div>
       </header>
