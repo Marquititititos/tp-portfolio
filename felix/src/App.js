@@ -32,13 +32,12 @@ function App() {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        // progress = how visible the element is (0 to 1)
         const progress = entry.intersectionRatio;
         entry.target.style.setProperty("--progress", progress);
       });
     },
     {
-      threshold: Array.from({ length: 101 }, (_, i) => i / 100), // makes animation smooth
+      threshold: Array.from({ length: 101 }, (_, i) => i / 100),
     }
   );
 

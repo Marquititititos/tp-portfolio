@@ -32,13 +32,11 @@ function App() {
       const windowHeight = window.innerHeight;
       const scrollY = window.scrollY;
     
-      // --- PARALLAX FOR ELLIPSES ---
       document.querySelectorAll(".Ellipse").forEach((el) => {
-        const speed = 0.05;          // Try 0.1 to 0.5 for different depths
+        const speed = 0.05;  
         el.style.transform = `translateY(${scrollY * speed}px)`;
       });
-    
-      // --- REVEAL SCROLL PROGRESS EFFECT ---
+
       elements.forEach(el => {
         const rect = el.getBoundingClientRect();
         const elementTop = rect.top;
@@ -58,7 +56,7 @@ function App() {
   
     window.addEventListener("scroll", updateElements);
     window.addEventListener("resize", updateElements);
-    updateElements(); // run on load
+    updateElements(); 
   
     return () => {
       window.removeEventListener("scroll", updateElements);

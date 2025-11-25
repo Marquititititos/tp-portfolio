@@ -97,7 +97,7 @@ html, body, #root, .App {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 100px;
+  gap: 130px;
   z-index: 1;
   margin-top: 10%;
 }
@@ -139,9 +139,9 @@ html, body, #root, .App {
   gap: 6%;
 }
 .subtitulo {
-  margin-top: 5%;
   font-size: x-large;
   font-weight: bolder;
+  white-space: nowrap;
 }
 
 .fotoIzquierda {
@@ -156,10 +156,11 @@ html, body, #root, .App {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  font-size: larger;
 }
 
 .descIzquierda {
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: start;
 }
 
@@ -185,17 +186,19 @@ html, body, #root, .App {
   justify-content: flex-start;
   flex-direction: column;
   text-align: end;
+  font-size: larger;
 }
 
 .tituloDerecha {
   margin-top: 5%;
   font-size: x-large;
   font-weight: bolder;
-  margin-left: 70%;
+  margin-left: 50%;
+  white-space: nowrap;
 }
 
 .descDerecha {
-  margin-top: 5%;
+  margin-top: 2%;
   text-align: end;
 }
 

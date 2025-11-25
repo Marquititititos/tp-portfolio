@@ -339,7 +339,7 @@ html, body, #root, .App {
 
 .textoContacto {
   display: flex;
-  gap: 280%;
+  gap: 230%;
   font-weight: bold;
 }
 
